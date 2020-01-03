@@ -5,7 +5,8 @@
 
 IMAGE="ut-qtcreator:base"
 CONTAINER_NAME=ut-qtcreator
-FAKE_HOME=/home/dev/ubuntutouch
+DEV_HOME=/home/$(id -un)
+
 
 
 xhost +
@@ -14,5 +15,5 @@ docker run --rm --net=host \
     -u `id -u`:`id -g` -e DISPLAY -e LANG=C.UTF-8 -e LC_ALL=C.UTF-8 \
     --volume="/etc/passwd:/etc/passwd:ro" \
     --volume="/tmp/.X11-unix:/tmp/.X11-unix:rw" \
-    --volume="/home/$(id -un):$FAKE_HOME" \
+    --volume="$DEV_HOME:$DEV_HOME" \
 $IMAGE
