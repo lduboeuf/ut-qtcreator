@@ -6,7 +6,7 @@ provide access to ubuntu touch QML Components
 `git clone https://github.com/lduboeuf/ut-qtcreator`
 
 ## build docker image
-`cd ut-qt-creator  && docker build -t ut-qtcreator:base .`
+`cd ut-qtcreator  && docker build -t ut-qtcreator:base .`
 
 ## run qtcreator
 `ut-qtcreator.sh `
