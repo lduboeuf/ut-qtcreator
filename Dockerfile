@@ -24,13 +24,5 @@ RUN apt-get update && apt-get install -y \
 COPY plugins.csv /tmp/plugins.csv
 COPY register_plugins.sh /tmp/register_plugins.sh
 RUN cd /tmp && chmod +x register_plugins.sh && ./register_plugins.sh
-#RUN chmod +x /tmp/register_plugins.sh 
-#RUN /tmp/register_plugins.sh
-#ARG QML_LIB_PATH=/usr/lib/x86_64-linux-gnu/qt5/qml
-#ARG QML_TYPE_NAME=plugins.qmltypes
-#RUN qmlplugindump -nonrelocatable Ubuntu.Contacts 0.1 ${QML_LIB_PATH} > ${QML_LIB_PATH}/Ubuntu/Contacts.0.1/plugins.qmltypes
-#RUN qmlplugindump -nonrelocatable Ubuntu.History 0.1 ${QML_LIB_PATH} > ${QML_LIB_PATH}/Ubuntu/History/plugins.qmltypes
-#RUN qmlplugindump -nonrelocatable Ubuntu.Telephony 0.1 ${QML_LIB_PATH} > ${QML_LIB_PATH}/Ubuntu/Telephony/plugins.qmltypes
-#RUN qmlplugindump -nonrelocatable  -noinstantiate -dependencies "/tmp/empty.json" Morph.Web 0.1 ${QML_LIB_PATH}> ${QML_LIB_PATH}/Morph/Web/plugins.qmltypes
 
 CMD ["/usr/bin/qtcreator"]
