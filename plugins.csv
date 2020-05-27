@@ -5,6 +5,7 @@ Ubuntu.History;0.1;Ubuntu/History
 Ubuntu.Thumbnailer;0.1;Ubuntu/Thumbnailer
 Ubuntu.Connectivity;0.1;Ubuntu/Connectivity
 Ubuntu.DownloadManager;0.1;Ubuntu/DownloadManager
+Ubuntu.Keyboard;0.1;Ubuntu/Keyboard
 MeeGo.QOfono;0.2;MeeGo/QOfono
 Morph.Web;0.1;Morph/Web
 Ubuntu.AddressBook.Base;0.1;Ubuntu/AddressBook/Base
