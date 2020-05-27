@@ -3,7 +3,7 @@ FROM clickable/ubuntu-sdk:16.04-amd64
 RUN apt-get update && apt-get install -y \
 	qtcreator
 
-
+#qml modules
 RUN apt-get update && apt-get install -y \
 	qml-module-qtcontacts \
 	qtdeclarative5-ubuntu-contacts0.1 \
@@ -18,20 +18,26 @@ RUN apt-get update && apt-get install -y \
 	qml-module-qt-labs-platform \
 	qml-module-qt-labs-settings \
 	qml-module-ofono \
+	qml-module-morph-web \
+	qml-module-qtquick-dialogs \
+	qml-module-qtquick-extras
+
+#dev libs
+RUN apt-get update && apt-get install -y \
 	libofono-qt-dev \
 	libqofono-dev \
 	telepathy-mission-control-5 \
+	libmission-control-plugins0 \
 	libphonenumber-dev \
 	libsqlite3-dev \
 	libtelepathy-qt5-dev \
 	libglib2.0-dev \
  	libqt5gstreamer-dev \
 	dconf-service \
-	qml-module-morph-web \
-	qtwebengine5-dev \
-	qml-module-qtquick-dialogs \
-	qml-module-qtquick-extras
-
+	libmission-control-plugins-dev \
+	libandroid-properties-dev \
+	libandroid-properties1 \
+	qtwebengine5-dev
 
 ##install plugins
 COPY plugins.csv /tmp/plugins.csv
