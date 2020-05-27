@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y \
 	qml-module-qt-labs-folderlistmodel \
 	qml-module-qt-labs-platform \
 	qml-module-qt-labs-settings \
+	qml-module-ofono \
 	qml-module-morph-web \
 	qtwebengine5-dev
 

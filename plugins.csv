@@ -1,3 +1,8 @@
 Ubuntu.Telephony;0.1;Ubuntu/Telephony
+Ubuntu.Telephony.PhoneNumber;0.1;Ubuntu/Telephony/PhoneNumber
 Ubuntu.Contacts;0.1;Ubuntu/Contacts.0.1
 Ubuntu.History;0.1;Ubuntu/History
+Ubuntu.Thumbnailer;0.1;Ubuntu/Thumbnailer
+Ubuntu.Connectivity;0.1;Ubuntu/Connectivity
+Ubuntu.DownloadManager;0.1;Ubuntu/DownloadManager
+MeeGo.QOfono;0.2;MeeGo/QOfono
