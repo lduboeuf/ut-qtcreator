@@ -9,6 +9,6 @@ provide code completion to ubuntu touch QML Components and run directly apps wit
 `cd ut-qtcreator  && docker build -t ut-qtcreator:base .`
 
 ## run qtcreator
-`ut-qtcreator.sh `
+`./ut-qtcreator.sh `
 `
 
